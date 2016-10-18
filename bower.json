@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "homepage": "https://github.com/ckaren28/Friends",
+  "authors": [
+    "Karen Chin <c.karen28@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "scrollmagic": "^2.0.5",
+    "bootstrap": "^3.3.7"
+  }
+}

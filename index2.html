@@ -1,0 +1,66 @@
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Styles -->
+    <script src="https://use.fontawesome.com/60c899178c.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src = "bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src = "bower_components/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <script src = "bower_components/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+    <script src = "main.js"></script>
+</head>
+
+<section id="titlechart">
+	<div id="description">
+		<h1 class="badge gsap">Custom Containers</h1>
+		<h2>One page can have multiple scroll containers.</h2>
+		<p>
+			A scroll container can be any element (usually a div though), that has scrolling happening inside of it.
+		</p>
+		<p>
+			While textareas have scrolling enabled by default, it needs to be explicitly set for divs, using the css style <code>overflow: scroll</code>.
+		</p>
+		<a href="#" class="viewsource">view source</a>
+	</div>
+</section>
+<div class="spacer s2"></div>
+<div class="spacer s0"></div>
+<section class="demowrap">
+	<div id="container1" class="scrollContainer" style="width: 500px; height: 300px; border: 1px solid blue; overflow:scroll">
+		<section class="demo">
+			<div class="spacer s2"></div>
+			<div class="spacer s0" id="trigger1"></div>
+			<div class="animated box1 red disablePointerEvents">
+				<p>Wait for green.</p>
+				<a href="#" class="viewsource">view source</a>
+			</div>
+			<div class="spacer s3"></div>
+			<script>
+				$(function () { // wait for document ready
+					// init controller
+					var controller1 = new ScrollMagic.Controller({container: "#container1"});
+
+					// build scene
+					var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 300})
+						.addTo(controller1)
+						.setTween(TweenMax.to("#container1 .animated", 0.5, {backgroundColor: "green"}))
+						.addIndicators() // add indicators (requires plugin)
+						.setPin("#container1 .animated");
+				});
+			</script>
+		</section>
+    </div>
+</section>
+<div class="spacer s3"></div>
+<div class="spacer s0"></div>
+
+
+<div class="spacer s5"></div>

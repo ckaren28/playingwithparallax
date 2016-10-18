@@ -1,0 +1,104 @@
+/* Ignore => Base Styles */
+body {
+    /*background: #e3e3e3; */
+    -webkit-font-smoothing: antialiased; }
+.ScrollSceneIndicators { z-index: 9999999 !important; }
+
+/* Create huge scrolling area (imitates height of a page) */
+.wrapper {
+    padding-top: 200px;
+    padding-bottom: 400px;
+    overflow: hidden;
+    width: 85%;
+
+    background-color: black;
+    border-top: 5px solid white;
+    position: absolute;
+    top: 2%;
+    left: 6%;
+}
+
+/* Styles for wrap for demo */
+/*.wrap {
+  text-align: center;
+  background: #fff;
+  padding: 50px 0;
+  -moz-box-shadow: 0 0 6px rgba(153, 153, 153, 0.25);
+  -webkit-box-shadow: 0 0 6px rgba(153, 153, 153, 0.25);
+  box-shadow: 0 0 6px rgba(153, 153, 153, 0.25);
+  position: relative;
+}*/
+#scene{
+    /*border: 2px solid black;*/
+    text-align: center;
+}
+#scene2{
+    /*border: 2px solid black;*/
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+/**{
+    background-color: black;
+}*/
+.fa-cloud{
+    color: white;
+}
+.container1{
+    margin: 0;
+    background-color: black;
+    position: absolute;
+    height: 800px;
+    width: 100%;
+    min-width: 75%;
+    text-align: center;
+
+}
+.container2{
+    background-color: black;
+    position: absolute;
+    border-top: 5px solid white;
+    /*margin: 20px 0 40px 0;*/
+    width: 85%;
+    height: 600px;
+    top: 12%;
+    left: 7%;
+    overflow: hidden;
+    /*background-image: url("stars.jpg");*/
+
+
+
+}
+.container3{
+    background-color: black;
+    position: absolute;
+    /*margin: 20px 0 40px 0 ;*/
+    border-top: 5px solid white;
+    width: 85%;
+    height: 600px;
+    top: 2%;
+    left: 8%;
+    overflow: scroll;
+    /*background-image: url("stars.jpg");*/
+
+}
+/*main{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border: 10px solid white;
+    overflow: scroll;
+    background-color: red;
+    padding: 300px 0 500px 0;
+    left: 25%;
+    top: 5%;
+
+}*/
+*{
+    font-family: 'Open Sans', sans-serif;
+
+}

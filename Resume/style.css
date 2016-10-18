@@ -1,0 +1,142 @@
+*{
+    margin: 5px;
+    /*font-family: 'Oswald', sans-serif;*/
+    /*font-family: 'neue helvetica'*/
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #b5bfbe;
+
+
+
+}
+img{
+    width: 25px;
+    height: 25px;
+}
+.left, .right{
+    display: inline-block;
+    vertical-align: top;
+    padding: 4px;
+    max-height: 100%;
+    background-color: #b5bfbe;
+    height: 1000px;
+    border-top: thick solid black;
+
+}
+    .left{
+        max-width: 25%;
+        /*height: 1205px;*/
+    }
+    .right{
+        max-width: 70%;
+        border-left: thick solid black;
+
+    }
+.title, .loc{
+    display: inline-block;
+}
+    .title{
+        text-align: left;
+    }
+    .loc{
+        position: absolute;;
+        right: 5%;
+    }
+.desc, .date{
+    display: inline-block;
+}
+    .desc{
+        text-align: left;
+        max-width: 55%;
+    }
+    .date{
+        position: absolute;;
+        right: 5%;
+        font-size: 14px;
+    }
+h3{
+    text-align: left;
+}
+.expdesc p{
+    max-width: 70%;
+}
+h2{
+    font-size: 30px;
+    background-color: #b5bfbe;
+    color: #f1eaef;
+    text-align: left;
+}
+h1{
+    font-size: 60px;
+    color: #f1eaef;
+    /*margin-left: 10px;*/
+    text-align: left;
+
+}
+.wd{
+    color: #dee1e0;
+    position: absolute;
+    right: 6%;
+}
+
+    .wd, .name{
+        display: inline;
+
+    }
+
+.contact p{
+    font-size: 12px;
+    display: inline;
+    margin: 0;
+    background-color: #f1eaef;
+
+}
+.contact{
+    background-color: #f1eaef;
+    width: 81%;
+    margin-bottom: 0;
+
+
+}
+img{
+    padding-left: 5%;
+    background-color: #f1eaef;
+
+}
+h3{
+    font-weight: 900;
+    /*color: #343434;*/
+    padding: 2px;
+}
+
+p, li{
+    color: #343434;
+    font-size: 14px;
+}
+.header{
+    background-color: #b5bfbe;
+    padding-top: 30px;
+    height: 200px;
+    width: 1220px;
+}
+.Experience, .Education, .Projects, .skills, .tskills{
+    margin-top: 4%;
+}
+.summary{
+    padding: 3%;
+    vertical-align: top;
+}
+.wrapper{
+    background-color: #b5bfbe;
+    padding-bottom: 50px;
+}
+.hr{
+    color: black;
+}
+a { text-decoration: none;
+    color:black;
+    background-color: #f1eaef;
+ }
+a:visited { text-decoration: none; }
+.tskills{
+    padding-top: 50px;
+}
